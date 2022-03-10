@@ -1,0 +1,75 @@
+********************************IF****************************
+
+read -p "enter num" num
+
+if ! [[ $1 =~ '^[0-9]+$' ]] && [ $num -eq 100 ] && [ $num -lt 123 ] && [ $num -gt 50 ]
+
+then 
+echo "condition is true"
+end
+
+
+***************************IF ELSE****************************
+
+
+read -p "enter num" num
+
+if ! [[ $1 =~ '^[0-9]+$' ]] && [ $num -eq 100 ] && [ $num -lt 123 ] && [ $num -gt 50 ]
+
+then 
+echo "condition is true"
+
+else
+echo "value is smaller"
+
+fi
+
+
+*****************************FOR LOOP****************************
+
+
+echo "For Loop"
+
+for i in {1..10}
+do
+echo "$i"
+done
+
+*****************************WHILE LOOP******************************
+
+read -p "Enter a num" numb
+ while [ $numb -le 10 ]
+ do
+ echo $numb
+ ((numb++))
+ done
+ echo "End"
+
+****************************UNTIL*************************************
+
+read -p "enter a number" number
+ until [ $number -gt 10 ]
+ do 
+ echo $number
+ ((number++))
+ done
+ echo "End"
+
+****************************FILE CREATION****************************
+
+echo " File Creation"
+vi files1.txt
+
+
+echo "New Line Appending"
+
+read -p "Prasannamugundhan" newline
+echo $newline >> $files1.txt
+cat files1.txt
+
+**********************************************************************
+
+scp /Users/prasanna.jahir/Desktop/password.txt @root10.0.2.15:/home/prasasnna/Desktop/password.txt
+
+
+
