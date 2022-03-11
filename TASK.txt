@@ -20,7 +20,7 @@ then
 echo "condition is true"
 
 else
-echo "value is smaller"
+echo "condition is false"
 
 fi
 
