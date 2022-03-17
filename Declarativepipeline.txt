@@ -1,0 +1,51 @@
+pipeline {
+    agent any
+    
+    stages{
+        
+         stage("Compile")
+        {
+            steps
+            {
+                echo "Compiled Successfully"
+            }
+        }
+        
+         stage("Test")
+        {
+            steps
+            {
+                echo "Testing the scripts"
+            }
+        }
+        stage("Build")
+        {
+            steps
+            {
+                echo "Building the scripts"
+            }
+        }
+        
+        stage(Success)
+        {
+            steps
+            {
+                echo"Successfully Built"
+                
+            }
+        }
+        
+        stage("Deploy")
+        {
+            steps
+            {
+                echo"Deployed Successfully"
+            }
+        }
+        
+        
+        
+        
+        
+    }
+}
